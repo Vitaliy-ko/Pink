@@ -1,0 +1,97 @@
+body {
+   margin: 0;
+   padding: 0;
+
+   font-size: $small-font-size;
+   font-family: $font-stack;
+   color: $primary-font-color;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+a {
+   text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+li {
+   list-style: none;
+}
+
+.visually-hidden {
+   position: absolute;
+
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   padding: 0;
+   overflow: hidden;
+
+   white-space: nowrap;
+
+   border: 0;
+
+   clip: rect(0 0 0 0);
+   clip-path: inset(100%);
+}
+
+// screen width dependent styles -----
+
+.container {
+   padding: 0 $mobile-container;
+   position: relative;
+}
+
+.break-line {
+   &--w660 {
+      display: none;
+   }
+
+   &--w960 {
+      display: none;
+   }
+}
+
+@media screen and (min-width: $tablet-screen) {
+   .container {
+      padding: 0 $tablet-container;
+   }
+
+   .break-line {
+      display: none;
+
+      &--w660 {
+         display: inline;
+      }
+   }
+
+}
+
+@media screen and (min-width: $desktop-screen) {
+   .container {
+      padding: 0 $desktop-container;
+      max-width: 960px;
+      margin: 0 auto;
+   }
+
+   .break-line {
+      &--w660 {
+         display: none;
+      }
+
+      &--w960 {
+         display: inline;
+      }
+   }
+}
+
+// end screen width dependent styles -----
+

@@ -1,0 +1,154 @@
+.reviews {
+   padding-top: 42px;
+   padding-bottom: 42px;
+}
+
+.reviews__icon-quotes,
+.reviews__switch-button {
+   display: none;
+}
+
+.reviews__item {
+   margin: 0;
+   padding-bottom: 33px;
+
+   &:not(:first-of-type) {
+      display: none;
+   }
+}
+
+.reviews__item-author {
+   display: block;
+   margin-bottom: 13px;
+
+   font-weight: 700;
+   font-size: $middle-font-size;
+   line-height: 30px;
+   text-align: center;
+   font-style: normal;
+}
+
+.reviews__item-text {
+   margin: 0;
+
+   font-size: $small-font-size;
+   line-height: 30px;
+   text-align: center;
+
+   quotes: "«""»";
+
+   &::before {
+      content: open-quote;
+   }
+
+   &::after {
+      content: close-quote;
+   }
+}
+.reviews__author-description {
+   display: none;
+}
+
+@media screen and (min-width: $tablet-screen) {
+   .reviews {
+      padding-bottom: 20px;
+   }
+   .reviews__item {
+      display: flex;
+      flex-direction: column;
+      padding-top: 53px;
+   }
+
+   .reviews__item-author {
+      order: 20;
+      margin-bottom: 2px;
+
+      font-size: 20px;
+   }
+
+   .reviews__author-description {
+      display: block;
+      padding-top: 2px;
+
+      font-weight: 300;
+      font-size: $small-font-size;
+      letter-spacing: 0.02em;
+   }
+
+   .reviews__item-text {
+      order: 10;
+      margin-bottom: 35px;
+
+      font-size: $middle-font-size;
+   }
+}
+
+@media screen and (min-width: $desktop-screen) {
+   .reviews {
+      padding-top: 71px;
+   }
+
+   .reviews__icon-quotes {
+      display: block;
+      margin: 0 auto;
+   }
+
+   .reviews__cite-wrapper {
+      position: relative;
+   }
+
+   .reviews__item-text {
+      padding: 0 80px;
+   }
+
+   .reviews__item {
+      padding-top: 49px;
+   }
+
+   .reviews__item-author {
+      font-size: 24px;
+   }
+
+   .reviews__author-description {
+      font-size: 18px;
+      padding-top: 3px;
+   }
+
+   .reviews__switch-button {
+      display: block;
+      background: transparent;
+      border: none;
+      padding: 0;
+      position: absolute;
+      top: 85px;
+
+
+      &::before,
+      &::after {
+         content: "";
+         display: block;
+         background-color: #bec2c7;
+         width: 30px;
+         height: 2px;
+      }
+
+      &::before {
+         transform: translateY(22px) rotate(45deg);
+      }
+
+      &::after {
+         transform: rotate(-45deg);
+      }
+
+      &--left {
+         left: -5px;
+      }
+
+      &--right {
+         top: 107px;
+         right: -5px;
+         transform: rotate(180deg);
+      }
+
+   }
+}

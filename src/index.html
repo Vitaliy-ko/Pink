@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Pink - взгляните на жизнь иначе!</title>
+   <link href="./fonts/fonts.css" rel="stylesheet">
+   <link href="./css/normalize.css" rel="stylesheet">
+   <link href="./css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+   <header class="main-header">
+      <div class="container">
+         <div class="main-header__nav-bar main-header__nav-bar--opened">
+            <a class="main-header__logo-link" aria-label="Логотип сайта" role="banner">
+               <svg class="main-header__logo main-header__logo--320" width="75" height="23">
+                  <use xlink:href="./img/sprite.svg#logo-site-320"></use>
+               </svg>
+               <svg class="main-header__logo main-header__logo--660" width="147" height="40">
+                  <use xlink:href="./img/sprite.svg#logo-site-660"></use>
+               </svg>
+               <svg class="main-header__logo main-header__logo--960" width="147" height="40">
+                  <use xlink:href="./img/sprite.svg#logo-site-960"></use>
+               </svg>
+            </a>
+            <nav class="main-nav">
+               <button class="main-nav__toggle" type="button">
+               </button>
+               <ul class="main-nav__list">
+                  <li class="main-nav__list-item">Главная</li>
+                  <li class="main-nav__list-item">Фотографии</li>
+                  <li class="main-nav__list-item">Конкурс</li>
+                  <li class="main-nav__list-item">HTML Academy</li>
+               </ul>
+            </nav>
+         </div>
+
+         <div class="main-header__download-app download-app container">
+            <b class="download-app__entice">Взгляните<br class="break-line">на жизнь<br class="break-line">иначе!</b>
+            <button class="download-app__link--button">Скачать приложение</button>
+            <div class="download-app__link-group">
+               <a class="download-app__link--apple" href="https://www.apple.com/ru/itunes/charts/free-apps/" aria-label="Скачать приложение для Apple">
+                  <svg width="47" height="56">
+                     <use xlink:href="./img/sprite.svg#icon-apple"></use>
+                  </svg>
+               </a>
+               <a class="download-app__link--android" href="https://play.google.com/store/apps?hl=ru" aria-label="Скачать приложение для Android">
+                  <svg width="43" height="47">
+                     <use xlink:href="./img/sprite.svg#icon-android"></use>
+                  </svg>
+               </a>
+               <a class="download-app__link--microsoft" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone?icid=CNavAppsWindowsPhoneApps" aria-label="Скачать приложение для Windows">
+                  <svg width="43" height="47">
+                     <use xlink:href="./img/sprite.svg#icon-microsoft"></use>
+                  </svg>
+               </a>
+            </div>
+            <p class="download-app__description">
+               Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
+         </div>
+      </div>
+
+   </header>
+   <main class="main-page__main-content">
+      <h1 class="visually-hidden">Приложение для редактирования фотографий</h1>
+      <section class="marketing">
+         <h2 class="visually-hidden">Почему Вам стоит скачать наше приложение</h2>
+         <p class="marketing__entice-group">
+            <b class="marketing__entice-item">Устали от серости мегаполиса?</b>
+            <b class="marketing__entice-item"><span class="first-line">Нам есть, что вам </span>предложить!</b>
+         </p>
+         <div class="markerting__app-info">
+            <div class="container markerting__flex-wrapper">
+               <div class="markerting__description">
+                  <div class="markerting__item">
+                     <h3 class="markerting__item-title">Поднимает настроение</h3>
+                     <p class="markerting__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                  </div>
+                  <div class="markerting__item">
+                     <h3 class="markerting__item-title">Меняет мир вокруг</h3>
+                     <p class="markerting__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью,
+                        чтобы <br class="break-line">усилить эффект</p>
+                  </div>
+                  <div class="markerting__item">
+                     <h3 class="markerting__item-title">Заводит новых друзей</h3>
+                     <p class="markerting__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+                        заводите новых</p>
+                  </div>
+               </div>
+               <div class="markerting__phone-photos">
+                  <div class="markerting__photos-wrapper">
+                     <picture>
+                        <source media="(min-width: 960px)" srcset="img/960px/phone-screen1-1x.png">
+                        <img class="markerting__phone-photo" src="#" alt="Изображение телефона с фотографией на экране">
+                     </picture>
+                     <picture>
+                        <source media="(min-width: 960px)" srcset="img/960px/phone-screen2-1x.png">
+                        <img class="markerting__phone-photo" src="#" alt="Изображение телефона с фотографией на экране и примененным к ней розовым фильтром">
+                     </picture>
+                     <picture>
+                        <source media="(min-width: 960px)" srcset="img/960px/phone-screen3-1x.png">
+                        <source media="(min-width: 660px)" srcset="img/660px/image-iphone-1x.png">
+                        <img class="markerting__phone-photo" src="img/320px/image-iphone-1x.png" alt="Изображение телефона с фотографией на экране и примененным к ней розовым со смайликом">
+                     </picture>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <article class="app-effect">
+         <div class="container app-effect__flex-wrapper">
+            <h2 class="visually-hidden">Эффект от использования приложения</h2>
+            <div class="app-effect__timer" role="img" aria-label="Изображение таймера со значением 24">
+               <span class="app-effect__timer-value">24</span>
+               <svg class="app-effect__timer-img" width="238" height="276">
+                  <use xlink:href="./img/sprite.svg#img-timer"></use>
+               </svg>
+            </div>
+            <div class="app-effect__description">
+               <h3 class="app-effect__description-title">Эффект <br class="break-line--w660">на 24 часа!</h3>
+               <p class="app-effect__description-text">
+                  Британские ученые провели исследования <br class="break-line">и доказали, <br class="break-line--w960">что положительный эффект <br class="break-line">от использования приложения длится <br class="break-line">целые сутки!
+               </p>
+               <a class="app-effect__description-link" href="https://ru.wikipedia.org/wiki/%D0%9F%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F_%D0%B2%D0%BE%D1%81%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D1%8F_%D1%86%D0%B2%D0%B5%D1%82%D0%B0">Узнать больше об исследовании</a>
+            </div>
+         </div>
+      </article>
+      <section class="reviews">
+         <div class="container">
+            <h2 class="visually-hidden">Отзывы пользователей</h2>
+            <svg class="reviews__icon-quotes" role="presentation" aria-hidden="true" width="79" height="63">
+               <use xlink:href="./img/sprite.svg#icon-quotes"></use>
+            </svg>
+            <div class="reviews__cite-wrapper">
+               <blockquote class="reviews__item">
+                  <cite class="reviews__item-author">Николай Петров
+                     <span class="reviews__author-description">25 лет, водитель трамвая</span>
+                  </cite>
+                  <p class="reviews__item-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+                     привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+               </blockquote>
+               <blockquote class="reviews__item">
+                  <cite class="reviews__item-author">Иван Иванов</cite>
+                  <p class="reviews__item-text">
+                     Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+               </blockquote>
+               <blockquote class="reviews__item">
+                  <cite class="reviews__item-author">Петр Иванов</cite>
+                  <p class="reviews__item-text">
+                     Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
+                     познакомился со своей будущей женой в комментариях к выложенной фотографии!
+                  </p>
+               </blockquote>
+               <div class="reviews__switch-buttons">
+                  <button class="reviews__switch-button reviews__switch-button--left" type="button"></button>
+                  <button class="reviews__switch-button reviews__switch-button--right" type="button"></button>
+               </div>
+            </div>
+            <div class="reviews-pagination slider-pagination">
+               <button class="slider-pagination__item slider-pagination__item--active" type="button"></button>
+               <button class="slider-pagination__item" type="button"></button>
+               <button class="slider-pagination__item" type="button"></button>
+            </div>
+         </div>
+      </section>
+      <section class="purchase">
+         <div class="container">
+            <h2 class="visually-hidden" title>Купить набор функций приложения</h2>
+            <table class="purchase__tariffs-table">
+               <caption class="visually-hidden">Наборы функций и цены</caption>
+               <thead class="purchase__table-header">
+                  <tr class="purchase__tariffs-row purchase__tariffs-row--header">
+                     <th class="purchase__tariff-item purchase__column"></th>
+                     <th class="purchase__tariff-item purchase__column">
+                        <b class="purchase__tariff-title">База</b>
+                        <p class="purchase__tariff-price">1,99 USD</p>
+                     </th>
+                     <th class="purchase__tariff-item purchase__tariff-item--hit purchase__column">
+                        <b class="purchase__tariff-title">Стандарт</b>
+                        <p class="purchase__tariff-price">3,99 USD</p>
+                     </th>
+                     <th class="purchase__tariff-item purchase__column">
+                        <b class="purchase__tariff-title">Анлим</b>
+                        <p class="purchase__tariff-price">9,99 USD</p>
+                     </th>
+                  </tr>
+               </thead>
+               <tbody class="purchase__table-body">
+                  <tr class="purchase__tariffs-row">
+                     <th class="purchase__option-title purchase__column">Розовый фильтр</th>
+                     <td class="purchase__option-item purchase__option-item--selected purchase__column">
+                        <svg class="purchase__option-img" width="31" height="22">
+                           <use xlink:href="./img/sprite.svg#icon-option-yes"></use>
+                        </svg>
+                     </td>
+                     <td class="purchase__option-item purchase__option-item--selected purchase__column">
+                        <svg class="purchase__option-img" width="31" height="22">
+                           <use xlink:href="./img/sprite.svg#icon-option-yes"></use>
+                        </svg>
+                     </td>
+                     <td class="purchase__option-item purchase__option-item--selected purchase__column">
+                           <svg class="purchase__option-img" width="31" height="22">
+                              <use xlink:href="./img/sprite.svg#icon-option-yes"></use>
+                           </svg>
+                     </td>
+                  </tr>
+                  <tr class="purchase__tariffs-row">
+                     <th class="purchase__option-title purchase__column">Смайлики</th>
+                     <td class="purchase__option-item purchase__option-item--unselected purchase__column">
+                        <svg class="purchase__option-img" width="27" height="26">
+                           <use xlink:href="./img/sprite.svg#icon-option-no"></use>
+                        </svg>
+                     </td>
+                     <td class="purchase__option-item purchase__option-item--selected purchase__column">
+                        <svg class="purchase__option-img" width="31" height="22">
+                           <use xlink:href="./img/sprite.svg#icon-option-yes"></use>
+                        </svg>
+                     </td>
+                     <td class="purchase__option-item purchase__option-item--selected purchase__column">
+                        <svg class="purchase__option-img" width="31" height="22">
+                           <use xlink:href="./img/sprite.svg#icon-option-yes"></use>
+                        </svg>
+                     </td>
+                  </tr>
+                  <tr class="purchase__tariffs-row">
+                     <th class="purchase__option-title purchase__column">Комментарии</th>
+                     <td class="purchase__option-item purchase__option-item--unselected purchase__column">
+                        <svg class="purchase__option-img" width="27" height="26">
+                           <use xlink:href="./img/sprite.svg#icon-option-no"></use>
+                        </svg>
+                     </td>
+                     <td class="purchase__option-item purchase__option-item--unselected purchase__column">
+                        <svg class="purchase__option-img" width="27" height="26">
+                           <use xlink:href="./img/sprite.svg#icon-option-no"></use>
+                        </svg>
+                     </td>
+                     <td class="purchase__option-item purchase__option-item--selected purchase__column">
+                        <svg class="purchase__option-img" width="31" height="22">
+                           <use xlink:href="./img/sprite.svg#icon-option-yes"></use>
+                        </svg>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <div class="purchase-pagination slider-pagination">
+               <button class="slider-pagination__item" type="button"></button>
+               <button class="slider-pagination__item slider-pagination__item--active" type="button"></button>
+               <button class="slider-pagination__item" type="button"></button>
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer class="main-page__main-footer">
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <div class="contacts">
+         <div class="container">
+            <p class="contacts__entice">
+               <b class="contacts__entice-item">Остались вопросы?</b>
+               <b class="contacts__entice-item">Свяжитесь с нами!</b>
+            </p>
+            <div class="contacts__connections">
+               <div class="contacts__item">
+                  <p class="contacts__title">Звоните:</p>
+                  <a class="contacts__info" href="tel:+12345687836">+1(234)568-78-36</a>
+               </div>
+               <div class="contacts__item">
+                  <p class="contacts__title">Пишите:</p>
+                  <a class="contacts__info" href="mailto:mail@htmlacademy.ru">my.project@mail.com</a>
+               </div>
+               <div class="contacts__item">
+                  <p class="contacts__title">Приезжайте в гости:</p>
+                  <a class="contacts__info" href="https://goo.gl/maps/cj1UJPHpvq12">ул. Сичеславская набережная, 19/8</a>
+               </div>
+            </div>
+         </div>
+         <div class="contacts__map">
+            <iframe class="contacts__map-frame" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2645.3187705306113!2d35.05112854807666!3d48.46959890741006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1552327810946" allowfullscreen></iframe>
+         </div>
+         <div class="contacts__additional-info container">
+            <a class="contacts__logo-link" aria-label="Логотип сайта" href="index.html">
+               <svg class="contacts__logo contacts__logo--660" width="147" height="40">
+                  <use xlink:href="./img/sprite.svg#logo-site-660"></use>
+               </svg>
+               <svg class="contacts__logo contacts__logo--960" width="147" height="40">
+                  <use xlink:href="./img/sprite.svg#logo-site-960"></use>
+               </svg>
+            </a>
+            <ul class="contacts__social">
+               <li class="contacts__social-item">
+
+                  <svg class="contacts__social-img contacts__social-img--twitter" width="20" height="15">
+                     <use xlink:href="./img/sprite.svg#icon-twitter"></use>
+                  </svg>
+               </li>
+               <li class="contacts__social-item">
+                  <svg class="contacts__social-img contacts__social-img--facebook" width="9" height="18">
+                     <use xlink:href="./img/sprite.svg#icon-facebook"></use>
+                  </svg>
+               </li>
+               <li class="contacts__social-item">
+                  <svg class="contacts__social-img contacts__social-img--youtube" width="16" height="14">
+                     <use xlink:href="./img/sprite.svg#icon-youtube"></use>
+                  </svg>
+               </li>
+            </ul>
+            <div class="contacts__developed">
+               <p class="contacts__developed-info">
+                  Developer inforamtion
+               </p>
+            </div>
+         </div>
+      </div>
+
+   </footer>
+   <script>
+      let toggle = document.querySelector('.main-nav__toggle');
+      let mainNav = document.querySelector('.main-header__nav-bar');
+
+      mainNav.classList.toggle('main-header__nav-bar--opened');
+      toggle.addEventListener('click', () => {
+         mainNav.classList.toggle('main-header__nav-bar--opened');
+      })
+   </script>
+</body>
+
+</html>

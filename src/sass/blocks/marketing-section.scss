@@ -1,0 +1,266 @@
+.marketing__entice-group {
+   margin: 0;
+   padding-top: 40px;
+   padding-bottom: 65px;
+}
+
+.marketing__entice-item {
+   display: block;
+
+   font-weight: 300;
+   font-size: 24px;
+   line-height: 29px;
+   text-align: center;
+}
+
+.marketing__entice-item:first-of-type {
+   margin-bottom: 29px;
+}
+
+.markerting__app-info {
+   position: relative;
+
+   background-color: $accent-bg-color;
+
+   &::before {
+      content: "";
+      position: absolute;
+      top: -34px;
+      left: 0;
+
+      width: 50%;
+
+      font-size: 0;
+      line-height: 0;
+
+      border-width: 17px 50vw;
+      border-style: solid;
+      border-color: transparent;
+      border-right-color: $accent-bg-color;
+      border-bottom-color: $accent-bg-color;
+   }
+}
+
+.markerting__description {
+   padding-top: 18px;
+   padding-bottom: 41px;
+}
+
+.markerting-item {
+   padding-top: 12px;
+}
+
+.markerting__item {
+   padding-top: 30px;
+}
+
+.markerting__item-title,
+.markerting__item-text {
+   text-align: center;
+}
+
+.markerting__item-title {
+   margin: 0;
+   margin-bottom: 13px;
+
+   font-size: $middle-font-size;
+}
+
+.markerting__item-text {
+   margin: 0;
+
+   line-height: 24px;
+}
+.marketing .break-line {
+   display: none;
+}
+
+.markerting__item__title {
+   margin: 0;
+   margin-bottom: 12px;
+   padding-top: 19px;
+
+   font-weight: 700;
+   font-size: $middle-font-size;
+   line-height: 24px;
+}
+
+.markerting__item__text {
+   margin: 0;
+   padding: 0 20px;
+
+   font-size: $small-font-size;
+   line-height: 24px;
+}
+
+.markerting__phone-photo {
+   display: block;
+   margin: 0 auto;
+}
+
+
+@media screen and (min-width: $tablet-screen) {
+   .marketing__entice-group {
+      padding-top: 48px;
+      padding-bottom: 97px;
+   }
+
+   .marketing__entice-item {
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 48px;
+
+      &:first-of-type {
+         margin: 0;
+      }
+   }
+
+   .first-line {
+      display: block;
+   }
+
+   .markerting__app-info {
+      &::before {
+         top: -50px;
+
+         border-width: 26px 50vw;
+      }
+   }
+
+   .markerting__flex-wrapper {
+      display: flex;
+      flex-direction: row;
+   }
+
+   .markerting__description {
+      flex: 1 1 310px;
+      order: 20;
+      padding-top: 24px;
+      padding-bottom: 42px;
+   }
+
+   .markerting__phone-photos {
+      flex: 0 0 310px;
+      order: 10;
+   }
+
+   .markerting__phone-photo {
+      position: absolute;
+      bottom: 0;
+      margin: 0;
+   }
+
+   .markerting__item-title,
+   .markerting__item-text {
+      margin: 0;
+
+      text-align: left;
+   }
+
+   .markerting__item {
+      padding-top: 0;
+      &:not(:last-child) {
+         margin-bottom: 35px;
+      }
+   }
+
+   .markerting__item-title {
+      margin-bottom: 12px;
+   }
+
+   .markerting__item-text {
+      line-height: 24px;
+      letter-spacing: 0;
+   }
+
+   .marketing .break-line {
+      display: inline-block;
+   }
+}
+
+@media screen and (min-width: ($tablet-screen + 1px)) and (max-width: ($desktop-screen - 1px)) {
+   .marketing .break-line {
+      display: none;
+   }
+}
+
+@media screen and (min-width: $desktop-screen) {
+   .marketing__entice-group {
+      margin-bottom: 159px;
+      padding-top: 66px;
+      padding-bottom: 0;
+   }
+
+   .marketing__entice-item {
+      font-size: 50px;
+      line-height: 60px;
+   }
+
+   .markerting__app-info {
+      &::before {
+         top: -70px;
+
+         border-width: 35px 50vw;
+      }
+   }
+
+   .markerting__flex-wrapper {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .markerting__phone-photos {
+      position: relative;
+
+      flex: auto;
+      height: 217px;
+   }
+
+   .markerting__photos-wrapper {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 5px;
+   }
+
+   .markerting__phone-photo {
+      position: static;
+      flex: 0 0 300px;
+
+      margin: 0;
+   }
+
+   .markerting__description {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 57px;
+      padding-bottom: 0;
+   }
+
+   .markerting__item {
+      flex: 0 0 300px;
+      padding: 0 30px;
+   }
+
+   .markerting__item-title {
+      margin-bottom: 24px;
+
+      font-size: 30px;
+      line-height: 30px;
+      text-align: center;
+   }
+
+   .markerting__item-text {
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
+
+      & .break-line {
+         display: none;
+      }
+   }
+}
